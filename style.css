@@ -6,28 +6,46 @@
   font: inherit;
   line-height: 1;
 }
-ul {
-  list-style: none;
-}
+
 
 
 body {
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
+
   background: linear-gradient(to bottom, #EECFBA, #C5DDE8);
 }
 .container {
   max-width: 1024px;
   margin: 0 auto;
 }
+h1 {
+  margin: 25px auto 35px;
 
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
 .resume-item {
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
+
   border: 2px dashed #adad85;
   margin-bottom: 50px;
 }
-
-.resume-item h1 {
+ul {
+  text-align: center;
+  list-style: none;
+}
+ul li{
+  margin-bottom: 10px;
+}
+.resume-item h2 {
   margin: 10px auto;
 
   font-size: 25px;
+  font-weight: 500;
+  font-family: 'Work Sans', 'Helvetica', sans-serif;
   text-align: center;
   color: #3d3d29;
 
@@ -38,8 +56,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
+.resume-block.english {
+  flex-direction: column;
+}
+
+.resume-block p,
+.resume-block li {
+  font-size: 20px;
+}
+
 .resume-block img {
   width: 290px;
 }
@@ -48,3 +75,4 @@ body {
 
   text-decoration: none;
 }
+
