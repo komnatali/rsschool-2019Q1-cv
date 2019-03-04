@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -7,7 +7,11 @@
   line-height: 1;
 }
 
+body {
+  background: linear-gradient(to bottom, #EECFBA, #C5DDE8);
+}
 .container {
   max-width: 1024px;
   margin: 0 auto;
 }
+
