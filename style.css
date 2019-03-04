@@ -6,6 +6,10 @@
   font: inherit;
   line-height: 1;
 }
+ul {
+  list-style: none;
+}
+
 
 body {
   background: linear-gradient(to bottom, #EECFBA, #C5DDE8);
@@ -15,3 +19,32 @@ body {
   margin: 0 auto;
 }
 
+.resume-item {
+  border: 2px dashed #adad85;
+  margin-bottom: 50px;
+}
+
+.resume-item h1 {
+  margin: 10px auto;
+
+  font-size: 25px;
+  text-align: center;
+  color: #3d3d29;
+
+  text-transform: uppercase;
+}
+
+.resume-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.resume-block img {
+  width: 290px;
+}
+.resume-item a {
+  color: #ff4d4d;
+
+  text-decoration: none;
+}
