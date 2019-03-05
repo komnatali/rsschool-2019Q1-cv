@@ -86,7 +86,7 @@ ul {
 
 .resume-block p,
 .resume-block li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   font-size: 20px;
 }
@@ -99,9 +99,32 @@ ul {
   width: 200px;
 }
 .resume-item a {
+  position: relative;
+  
   color: #ff4d4d;
 
   text-decoration: none;
+
+  //transition: all .5s;
+}
+.resume-item a::after {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #e60000;
+  height: 2px;
+  transition: all .3s;
+}
+.resume-item a:hover:after {
+  width: 100%;
+}
+.resume-item a:hover {
+  color: #e60000;
 }
 .contacts {
   display: flex;
