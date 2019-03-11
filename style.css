@@ -1,38 +1,48 @@
 @font-face {
-  font-family: 'icons';
-  src: url('assets/fonts/icons.eot');
-  src: url('assets/fonts/icons.eot') format('embedded-opentype'),
-  url('assets/fonts/icons.woff') format('woff'),
-  url('assets/fonts/icons.ttf') format('truetype'),
-  url('assets/fonts/icons.svg') format('svg');
-  font-weight: normal;
   font-style: normal;
-}
-[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-weight: normal;
   font-family: "icons";
+
+  src: url("assets/fonts/icons.eot");
+  src: url("assets/fonts/icons.eot") format("embedded-opentype"),
+  url("assets/fonts/icons.woff") format("woff"),
+  url("assets/fonts/icons.ttf") format("truetype"),
+  url("assets/fonts/icons.svg") format("svg");
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
   font-style: normal;
   font-weight: normal;
+  font-family: "icons";
   color: #3d3d29;
 }
-.icon-phone:before { content: '\e803'; }
-.icon-mail:before { content: '\f0e0'; }
-.icon-telegram:before { content: '\f2c6'; }
+.icon-phone:before {
+  content: "\e803";
+}
+.icon-mail:before {
+  content: "\f0e0";
+}
+.icon-telegram:before {
+  content: "\f2c6";
+}
 
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
+
   font: inherit;
   line-height: 1;
+
+  border: 0;
+  outline: 0;
 }
 
 
 
 body {
-  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  font-family: "Work Sans", "Helvetica", sans-serif;
 
-  background: linear-gradient(to bottom, #EECFBA, #C5DDE8);
+  background: linear-gradient(to bottom, #eecfba, #c5dde8);
 }
 .container {
   max-width: 1024px;
@@ -41,33 +51,32 @@ body {
 h1 {
   margin: 25px auto 35px;
 
-  font-family: 'Work Sans', 'Helvetica', sans-serif;
-  font-size: 30px;
   font-weight: 500;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Work Sans", "Helvetica", sans-serif;
   text-align: center;
+  text-transform: uppercase;
 }
 .resume-item {
   margin: auto 15px 50px;
 
-  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  font-family: "Work Sans", "Helvetica", sans-serif;
 
   border: 2px dashed #adad85;
 }
 ul {
-  text-align: center;
   list-style: none;
+  text-align: center;
 }
 
 .resume-item h2 {
   margin: 10px auto;
 
-  font-size: 25px;
   font-weight: 500;
-  font-family: 'Work Sans', 'Helvetica', sans-serif;
+  font-size: 25px;
+  font-family: "Work Sans", "Helvetica", sans-serif;
   text-align: center;
   color: #3d3d29;
-
   text-transform: uppercase;
 }
 
@@ -80,7 +89,7 @@ ul {
 .resume-block.english {
   flex-direction: column;
 }
-.english h2{
+.english h2 {
   margin-bottom: 20px;
 }
 
@@ -100,25 +109,26 @@ ul {
 }
 .resume-item a {
   position: relative;
-  
+
   color: #ff4d4d;
-
   text-decoration: none;
-
-  //transition: all .5s;
 }
 .resume-item a::after {
+  content: ".";
   position: absolute;
+  right: 0;
   bottom: -7px;
   left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #e60000;
+
+  width: 0;
   height: 2px;
-  transition: all .3s;
+  margin: auto;
+
+  color: transparent;
+
+  background: #e60000;
+
+  transition: all 0.3s;
 }
 .resume-item a:hover:after {
   width: 100%;
@@ -138,7 +148,7 @@ ul {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
   .resume-block img {
     width: 200px;
   }
@@ -157,7 +167,9 @@ ul {
   }
 }
 
-@media screen and (max-width: 400px){
+
+
+@media screen and (max-width: 400px) {
   .resume-block img {
     width: 150px;
   }
